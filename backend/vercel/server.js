@@ -26,7 +26,7 @@ const app = express();
 
 // --- Middleware Setup ---
 app.use(cors({
-    origin: process.env.FRONTEND_URL || 'https://derma-scan-new.vercel.app',
+    origin: true, // Allow any origin
     credentials: true
 }));
 app.use(express.json());
